@@ -43,6 +43,6 @@ while True:
     try:
         i += 1
         print("Running . . . ",i,"times")
-        bot.infinity.polling()
+        bot.polling()
     except Exception:
         time.sleep(30)
