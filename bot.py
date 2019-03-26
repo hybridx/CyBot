@@ -38,9 +38,11 @@ def search_duckduckgo(message):
 def random_replies(message):
     bot.reply_to(message,respnd())
 
-
+i = 0
 while True:
     try:
+        i += 1
+        print("Running . . . ",i,"times")
         bot.polling()
     except Exception:
-        time.sleep(15)
+        time.sleep(30)
