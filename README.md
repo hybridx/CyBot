@@ -2,6 +2,6 @@
 Telegram chatbot application for testing pupose
 
 
-
-Use the virtual environment to run : _source virt/bin/activate_
+Create a virtual environment and then run 
+pip install -r requirement.txt
 
