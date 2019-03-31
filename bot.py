@@ -36,6 +36,7 @@ def search_duckduckgo(message):
 
 @bot.message_handler(func=lambda m:True)
 def random_replies(message):
+    print(message)
     bot.reply_to(message,respnd())
 
 i = 0
