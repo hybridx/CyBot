@@ -2,17 +2,28 @@ import telebot
 import time
 import nltk
 import random
+from chatterbot import ChatBot
+from chatterbot.trainers import ListTrainer
+import os
+
+cybot = ChatBot('cybot')
+cybot.set_trainer(ListTrainer)
+
+# for file in os.listdir('english/'):
+# 	data = open('english/'+file,'r').readlines()
+# 	cybot.train(data)
+# for file in os.listdir('hindi/'):
+# 	data = open('hindi/'+file,'r').readlines()
+# 	cybot.train(data)
+# for file in os.listdir('marathi/'):
+# 	data = open('marathi/'+file,'r').readlines()
+# 	cybot.train(data)
+
+def respnd(message):
+			return cybot.get_response(message)
 
 while True:
 	try:
-		f = open('humor.yml','r')
-		sentences = f.read()
-		f.close()
-		sentences = nltk.sent_tokenize(sentences)
-
-		def respnd():
-		    return random.choice(sentences)
-
 		BOT_URL = 'href="https://api.telegram.org/bot855637405:AAHUT9lZnm1fNbae6qNF2_zHMAnJJUbjsko/'
 
 		bot_token = "855637405:AAHUT9lZnm1fNbae6qNF2_zHMAnJJUbjsko"
@@ -39,7 +50,7 @@ while True:
 		@bot.message_handler(func=lambda m:True)
 		def random_replies(message):
 		    print(message.text)
-		    bot.reply_to(message,respnd())
+		    bot.reply_to(message,respnd(message.text))
 
 		i = 0
 		while True:
