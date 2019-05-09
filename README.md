@@ -17,8 +17,7 @@ Here's what you need to know about the API endpoints
  - @create - `/app/data/create`
  - @set - `/app/data/update`
  - @remove - `/app/data/remove`
- - @read - `/app/data/get_intent_data`
- 	   `/app/data/read_all_intents`
+ - @read - `/app/data/get_intent_data` `/app/data/read_all_intents`
 
 ##### The request data needs to be in the following format
 
