@@ -5,9 +5,9 @@ import requests
 
 app = Flask(__name__)
 
-SLACK_TOKEN = 'xoxb-597162919717-593703439362-PzcuoevS5I6i6bJ0BgezbzFQ'
+SLACK_TOKEN = '---'
 slack_client = SlackClient(SLACK_TOKEN)
-slack_token = 'kgOc7jujviaqdQqvd5IEEz5W'
+slack_token = '---'
 
 
 def send_message(channel_id, message,user):
@@ -34,7 +34,7 @@ def inbound():
 		bot = messaging_events.get('bot_id')
 
 	if 'subtype' not in data['event'].keys():
-		url = "http://192.168.2.56:5000/chatbot"
+		url = "http://localhost:12345/chatbot"
 		text = {"text" : text}
 		reply = requests.post(url,json=text).text
 		send_message(channel, reply, user)
