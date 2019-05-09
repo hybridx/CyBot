@@ -14,12 +14,13 @@ Website: https://www.cybzilla.com
 ### Development
 Here's what you need to know about the API endpoints
 
- - @create - `/api/data/create`
- - @set - `/api/data/update`
- - @remove - `/api/data/remove`
- - @read - `/api/data/{}`
+ - @create - `/app/data/create`
+ - @set - `/app/data/update`
+ - @remove - `/app/data/remove`
+ - @read - `/app/data/get_intent_data`
+ 	   `/app/data/read_all_intents`
 
-##### The data needs to be in the following format
+##### The request data needs to be in the following format
 
 ```
 data
