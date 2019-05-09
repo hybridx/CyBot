@@ -9,7 +9,7 @@
 
 ### You can check it out here!
 
-Website: https://aitechbay.com
+Website: https://www.cybzilla.com
 
 ### Development
 Here's what you need to know about the API endpoints
