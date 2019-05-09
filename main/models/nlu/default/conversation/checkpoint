@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/simandhar/Desktop/Vitti/vitti_v1.2/main/./models/nlu/default/conversation/component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/home/simandhar/Desktop/Vitti/vitti_v1.2/main/./models/nlu/default/conversation/component_5_EmbeddingIntentClassifier.ckpt"
