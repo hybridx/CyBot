@@ -186,11 +186,11 @@ def index_test():
 		return reply
 
 def function_response(text):
-	url = "http://127.0.0.1:5500/function"
-	text = {"text":text}
-	r = requests.post(url,json=text)
-	return json.loads(r.text)["text"]
-
+	#url = "http://127.0.0.1:5500/function"
+	#text = {"text":text}
+	#r = requests.post(url,json=text)
+	#return json.loads(r.text)["text"]
+	return "Working on this :)"
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0',port=5000,debug=True)
