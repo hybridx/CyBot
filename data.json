@@ -230,11 +230,11 @@
     },
     {
       "intent": "occupation",
-      "conversation": "I work for Cybzilla"
+      "conversation": "I work for email"
     },
     {
       "intent": "origin",
-      "conversation": "Cybzilla is where I was made"
+      "conversation": "email is where I was made"
     },
     {
       "intent": "ready",
@@ -322,7 +322,7 @@
     },
     {
       "intent": "well_done",
-      "conversation": "Thank you. You can email drop your suggestions vitti@cybzilla.com"
+      "conversation": "Thank you. You can email drop your suggestions vitti@email.com"
     },
     {
       "intent": "what_you_mean",
